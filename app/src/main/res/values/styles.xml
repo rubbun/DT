@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+
+        <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+            <item name="android:actionBarStyle">@style/DirectoryActionBar</item>
+        </style>
+
+        <style name="DirectoryActionBar">
+            <item name="android:background">#B40E18</item>
+        </style>
+
+</resources>

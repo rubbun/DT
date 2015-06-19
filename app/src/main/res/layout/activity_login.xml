@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:background="#F5F5F5"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ViewFlipper
+        android:id="@+id/districtBanner"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/banner_hieght" />
+   <ImageView
+       android:id="@+id/iv_version"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/version_image"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_version"
+        android:layout_margin="@dimen/login_screen_widget_margin"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:gravity="center_vertical"
+        android:hint="@string/user_name"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_margin="@dimen/login_screen_widget_margin"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableLeft="@drawable/ic_action_accounts"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:background="#222222"
+        android:gravity="center"
+
+        android:padding="@dimen/login_activity_padding">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/log_in" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/requestCredential"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#2D65A0"
+        android:text="@string/request_credentials"
+        android:textColor="#FFFFFF"
+        />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
